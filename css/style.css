@@ -1,0 +1,173 @@
+.intro {
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+.links{
+  text-align: center;
+  padding: 5px;
+}
+
+#homepage {
+  background: #1D4350;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, #A43931, #1D4350);
+  background: -o-linear-gradient(left, #A43931, #1D4350);
+  background: linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.profilepic {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  height: 90vh;
+}
+.masthead h1 {
+  font-size: 5.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.intro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+.container span{
+  text-transform: uppercase;
+  display: block;
+}
+.heading1{
+  font-size: 5rem;
+  font-weight:600;
+  letter-spacing: 0.8rem;
+  position: relative;
+  animation: text 3s 1;
+}
+.heading2{
+  font-size: 2.2rem;
+  color: #6ab04c;
+  border-width: 2px;
+}
+@keyframes text {
+  0%{
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 2rem;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 0.8rem;
+    margin-bottom: -40px;
+  }
+}
+
+
+#about {
+  padding-top: 5em;
+  min-height: 30rem;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.profile-pic{
+  width: 200px;
+}
+
+.button-navs{
+  margin: 2% 5% 2% 5%;
+  align-items: center;
+}
+
+
+.about {
+  background-color: #00f080;
+}
+.projects {
+  
+}
+.services {
+  
+}
+header p{
+  font-size: 0.7rem;
+}
+.content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  font-size: 28px;
+}
+
+.content-section h2 {
+  font-size: 2em;
+}
+
+.content-section p {
+  font-size: 0.7em;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section {
+    height: 400px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content-section {
+    font-size: 25px;
+  }
+
+  .masthead h1 {
+    font-size: 4.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html{
+    font-size: 10px;
+  }
+  .intro {
+    margin-left: 0;
+    margin-right: 0;
+  } 
+  .section {
+    height: 400px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .content-section {
+    font-size: 22px;
+  }
+  .masthead h1{
+    font-size: 3.5rem;
+  }
+}

@@ -1,8 +1,3 @@
-.intro {
-  background-color: #f5f5f5;
-  align-items: center;
-}
-
 .links{
   text-align: center;
   padding: 5px;
@@ -43,24 +38,18 @@
 }
 
 .intro{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+  height: 100vh;
+  align-items: center;
 }
 
 .welcome-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
+  color: #ffffff;
 }
-.container span{
-  text-transform: uppercase;
-  display: block;
+
+div.pp{
+  padding-left: 100px;
 }
+
 .heading1{
   font-size: 5rem;
   font-weight:600;

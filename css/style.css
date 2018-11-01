@@ -1,13 +1,16 @@
+body{
+  font-size: 16px;
+}
+
 .links{
   text-align: center;
   padding: 5px;
 }
 
 #homepage {
-  background: #1D4350;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(left, #A43931, #1D4350);
-  background: -o-linear-gradient(left, #A43931, #1D4350);
-  background: linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: table;
   height: 100vh;
@@ -15,32 +18,103 @@
   width: 100%;
   background-size: cover;
 }
-
+.row{
+  padding-bottom: 2rem;
+}
 .profilepic {
   max-width: 300px;
   max-height: 300px;
 }
+#about {
+  font-size: 1.6rem;
+  padding-top: 20%;
+  padding-bottom: 20%;
+ background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.masthead {
-  min-height: 30rem;
+}
+
+/* this section handles the hover project image settings */
+#projects{
+background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.project-display{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.img-hover{
   position: relative;
-  display: table;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-hover img{
+  max-width: 100%;
+}
+.img-hover .bottom-layer {
+  display: block;
+}
+.img-hover .top-layer {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-  height: 90vh;
+  height: 100%;
+  background: rgba(0, 0, 100, 0.8);
+  color: #fff;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
 }
-.masthead h1 {
-  font-size: 5.2rem;
-  margin: 0;
-  padding: 0;
+.img-hover:hover .top-layer, 
+.img-hover.active .top-layer {
+  opacity: 1;
 }
+.img-hover .img-text {
+  text-align: center;
+  font-size: 1.8rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.img-description{
+  font-size: 1.5rem;
+}
+hr {
+  border: 1px solid;
+
+}
+/*Project section Done*/
 
 .intro{
   height: 100vh;
   align-items: center;
-  background: rgb(255, 255, 255, 0);
+  background: none;
+}
+.contentcol{
+  align-items: center;
+}
+.project-img{
+  align-self: center;
+  align-content: center;
+
 }
 
 .welcome-text {
@@ -101,6 +175,10 @@ div.pp{
 }
 .projects {
   
+}
+
+.portfolio-item{
+  background-image: url("../img/bckimg.jpg");
 }
 .services {
   

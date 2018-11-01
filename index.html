@@ -47,87 +47,113 @@
   <!-- Header -->
   <section class='' id='homepage'>
   <div class='intro row'>
-      <div class="col-md-6 pp">
+      <div class="col-md-5 pp">
          <img class="float-right profilepic img-fluid rounded-circle" src="img/pp.jpg">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-7">
         <p class="welcome-text lead">Hi. My name is Robert Aung and welcome to my portfolio.<br>Select what you would like to view.</p>
-        <button class="btn rounded-circle btn-dark">Projects</button>
-        <button class="btn rounded-circle btn-dark">Resume</button>
-        <button class="btn rounded-circle btn-dark">Philosophy</button>
+        <div class="container-fluid">
+        <a class="btn rounded-circle btn-secondary" href="#projects">Projects</a>
+        <button class="btn rounded-circle btn-secondary">Resume</button>
+        <button class="btn rounded-circle btn-secondary">Philosophy</button>
+        </div>
       </div>
+
   </div>
   </section>
   
   <!-- About -->
   <section class='content-section bg-light' id='about'>
     <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
           <h2>About me</h2>
-
-          <p class="lead mb-5">I am a second year student at University of Michigan majoring in Computer Science and minoring in Mathematics. I have a wide range of interests and thus I value multidisciplinary pursuits. I am passionate about building software, as evident from the software projects I have completed both in and outside of schoolwork and learning new technologies, frameworks and data structures to integrate into what I build. I am also very interested in solving problems for organizations and companies especially relating to areas like optimization in processes and decision-making through use of technology and data processing techniques. In fact, I am currently researching on agent-based modeling for optimization in distributed systems. In addition to software and research, I am also very interested in entrepreneurship and making a positive social impact through it, as seen from my contributions in a non-profit starting organization Bridge Burma (bridgeburma.ml) and a student organization Optimize that promotes entrepreneurship on campus. Lastly, I value creativity over speed and I like to take my time to deliver quality work. Some of my personal strengths are compassion and adaptability, while my biggest weakness is my fear of rejection.</p>
+          <p class="font-weight-normal mb-5">I am a second year student at University of Michigan majoring in Computer Science and minoring in Mathematics. I have a wide range of interests and thus I value multidisciplinary pursuits. I am passionate about building software, as evident from the software projects I have completed both in and outside of schoolwork and learning new technologies, frameworks and data structures to integrate into what I build. I am also very interested in solving problems for organizations and companies especially relating to areas like optimization in processes and decision-making through use of technology and data processing techniques. In fact, I am currently researching on agent-based modeling for optimization in distributed systems. In addition to software and research, I am also very interested in entrepreneurship and making a positive social impact through it, as seen from my contributions in a non-profit starting organization Bridge Burma (bridgeburma.ml) and a student organization Optimize that promotes entrepreneurship on campus. Lastly, I value creativity over speed and I like to take my time to deliver quality work. Some of my personal strengths are compassion and adaptability, while my biggest weakness is my fear of rejection.</p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#projects">View my projects</a>
+    </div>
+  </section>
+
+  <section class="content-section" id="projects">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <!-- a project -->
+      <div class="row project-display">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-4 contentcol img-hover">
+          <img class="project-img bottom-layer img-fluid" src="img/brainsplit.png" alt="A screenshot of the BrianSplit game">
+          <div class="top-layer">
+            <div class="img-text">BrainSplit Multitasking Game</div>
+          </div>
+        </div>
+        <div class="col-lg-6 img-description">
+          <p class="">Using Altera DE2-115 board, my friends and I together built a microprocessor-based toy, as part of our Engineering course assignment. Programming of the I/O modules is done using Verilog and ASE100 assembly language. 
+          </p>
+        </div>
+        <div class="col-lg-1">
+        </div>
+      </div>
+      <hr>
+      <!-- a project -->
+      <div class="row project-display">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-4 contentcol img-hover">
+          <img class="project-img bottom-layer img-fluid" src="img/ml.jpeg" alt="Picture of a DE2-115 Altera board">
+          <div class="top-layer">
+            <div class="img-text">An Intelligent Post Classifier</div>
+          </div>
+        </div>
+        <div class="col-lg-6 img-description">
+          <p class="">Using machine learning and natural language processing techniques, I built an intelligent program in C++ that is able to identify the subject of a post on a question asking forum website - Piazza.<br>
+          The program is first trained by feeding data into it, which is then stored using data structures - Map and Binary Search Tree. The data structures are implemented manually, not just directly used from the C++ library. After training, the program predicts the most probable subject of a new post based on words used in the post, through efficient searching by recursion and probability calculation. This models the “Multi-Variate Bernoulli Naive Bayes Classifier".<br>
+          During testing with large datasets, the program performed very well - predicting 2602 out of 2988 posts correctly
+          </p>
+        </div>
+        <div class="col-lg-1">
+        </div>
+      </div>
+      <hr>
+      <!-- a project -->
+      <div class="row project-display">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-4 contentcol img-hover">
+          <img class="project-img bottom-layer img-fluid" src="img/euchre.jpg" alt="Picture of a DE2-115 Altera board">
+          <div class="top-layer">
+            <div class="img-text">Euchre Game Program</div>
+          </div>
+        </div>
+        <div class="col-lg-6 img-description">
+          <p class="">An object-oriented game program that allows the user to play a game of Euchre with computer-based opponents using a terminal-based interface.
+          </p>
+        </div>
+        <div class="col-lg-1">
+        </div>
+      </div>
+      <hr>
+      <!-- a project -->
+      <div class="row project-display">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-4 contentcol img-hover">
+          <img class="project-img bottom-layer img-fluid" src="img/bb.jpg" alt="Screenshot of Bridge Burma's landing page">
+          <div class="top-layer">
+            <div class="img-text">Bridge Burma Website</div>
+          </div>
+        </div>
+        <div class="col-lg-6 img-description">
+          <p class="">
+            Contributed to the front-end of Bridge Burma's website, using ReactJS framework with Bootstrap 4. Used responsive design techniques.
+          </p>
+        </div>
+        <div class="col-lg-1">
         </div>
       </div>
     </div>
   </section>
-
   
-  <section class="content-section" id="projects">
-      <div class="container">
-        <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Bridge Burma</h2>
-                  <p class="mb-0">Fron-end engineer for Bridge Burma - a platform for connecting Burmese individuals abroad.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>BrainSplit</h2>
-                  <p class="mb-0">Team member in developing the prototype for a microprocessor educational toy named BrainSplit</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>UMich Secure Cloud Manufacturing</h2>
-                  <p class="mb-0">Team member in Controls subteam of UMich research team on Secure Cloud Manufacturing</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Euchre</h2>
-                  <p class="mb-0">Designed and built a terminal-based Euchre game that allows two-player mode or single-player mode against computer players.</p>
-                </span>
-              </span>
-              <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
   
     <!--
   <img class="img-responsive img-fluid" alt="cover image for portfolio" src="https://www.dropbox.com/s/xzyz4vi5fr0b6dt/tablet-2188368_1920.jpg?raw=1"> </img>

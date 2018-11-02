@@ -184,6 +184,12 @@ div.pp{
 .services {
   
 }
+
+#blog {
+  margin-bottom: 5rem;
+}
+
+
 header p{
   font-size: 0.7rem;
 }

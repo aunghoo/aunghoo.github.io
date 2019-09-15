@@ -8,7 +8,7 @@ body{
 }
 
 p.normal-text {
-  font-size: 14px;
+  font-size: 18px !important;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -49,9 +49,10 @@ img.profilepic {
 }
 
 #about {
-  font-size: 1.6rem;
   padding-top: 10%;
   padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   color: #001a33;
   background: #D3CCE3;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
@@ -68,8 +69,8 @@ color: #e5e5e5;
 
 
 .project-display{
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .img-hover{
   position: relative;
@@ -233,8 +234,10 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 }
 
-
 @media only screen and (max-width: 768px) {
+  p.normal-text{
+    font-size: 16px !important;
+  }
   .intro {
     margin-left: 0;
     margin-right: 0;
@@ -260,11 +263,8 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 }
 
 @media only screen and (max-width: 480px) {
-  html{
-    font-size: 10px;
-  }
   p.normal-text{
-    font-size: 12px;
+    font-size: 16px !important;
   }
   .intro {
     margin-left: 0;

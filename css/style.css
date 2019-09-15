@@ -7,10 +7,15 @@ body{
   padding: 5px;
 }
 
+p.normal-text {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
 #homepage {
   background: #16222A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: table;
   height: 100vh;
@@ -18,21 +23,39 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   width: 100%;
   background-size: cover;
 }
-.row{
+
+div.intro{
+  align-items: center;
+  background: none;
+  margin-top: 20vh;
   padding-bottom: 2rem;
 }
-.profilepic {
+
+#typedtext {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+div.pp{
+}
+
+img.profilepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 300px;
   max-height: 300px;
 }
+
 #about {
   font-size: 1.6rem;
-  padding-top: 20%;
-  padding-bottom: 20%;
- background: #D3CCE3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: #001a33;
+  background: #D3CCE3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* this section handles the hover project image settings */
@@ -78,7 +101,7 @@ color: #e5e5e5;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
-.img-hover:hover .top-layer, 
+.img-hover:hover .top-layer,
 .img-hover.active .top-layer {
   opacity: 1;
 }
@@ -95,7 +118,6 @@ color: #e5e5e5;
   transform: translate(-50%, -50%);
 }
 .img-description{
-  font-size: 1.5rem;
 }
 hr {
   border: 1px solid;
@@ -103,27 +125,12 @@ hr {
 }
 /*Project section Done*/
 
-.intro{
-  height: 100vh;
-  align-items: center;
-  background: none;
-}
 .contentcol{
   align-items: center;
 }
 .project-img{
   align-self: center;
   align-content: center;
-
-}
-
-.welcome-text {
-  color: #ffffff;
-  font-size: 1.5rem;
-}
-
-div.pp{
-  padding-left: 100px;
 }
 
 .heading1{
@@ -153,14 +160,6 @@ div.pp{
   }
 }
 
-
-#about {
-  padding-top: 5em;
-  min-height: 30rem;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
 .profile-pic{
   width: 200px;
 }
@@ -175,14 +174,14 @@ div.pp{
   background-color: #00f080;
 }
 .projects {
-  
+
 }
 
 .portfolio-item{
   background-image: url("../img/bckimg.jpg");
 }
 .services {
-  
+
 }
 
 #blog {
@@ -207,6 +206,34 @@ header p{
   font-size: 0.7em;
 }
 
+.carousel-item {
+  padding-top: 10vh;
+  padding-left: 20vh;
+  height: 90vh;
+  color: #fff;
+}
+
+.carousel-item h1 {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.carousel-item p {
+  font-family: 'Esteban', serif;
+}
+
+p.author {
+  font-family: 'Roboto';
+}
+
+#philosophy {
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
 @media only screen and (max-width: 768px) {
   .intro {
     margin-left: 0;
@@ -220,9 +247,15 @@ header p{
   .content-section {
     font-size: 25px;
   }
-
   .masthead h1 {
     font-size: 4.4rem;
+  }
+  div.lead-text {
+    text-align: center;
+    margin-top: 50px;
+  }
+  #typedtext {
+    align: center;
   }
 }
 
@@ -230,10 +263,13 @@ header p{
   html{
     font-size: 10px;
   }
+  p.normal-text{
+    font-size: 12px;
+  }
   .intro {
     margin-left: 0;
     margin-right: 0;
-  } 
+  }
   .section {
     height: 400px;
     margin-left: 0;
@@ -245,4 +281,31 @@ header p{
   .masthead h1{
     font-size: 3.5rem;
   }
+  img.profilepic {
+    float: center;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  div.lead-text {
+    text-align: center;
+    margin-top: 50px;
+  }
+  #typedtext {
+    align: center;
+  }
+  .carousel-item {
+    padding-left: 2vh;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  div.intro {
+    margin-top: 30vh;
+  }
+  img.profilepic {
+    float: right;
+  }
+
+
+
 }

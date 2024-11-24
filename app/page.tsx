@@ -31,16 +31,6 @@ const TypewriterText = ({ text = "", speed = 50 }) => {
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("experience");
   const intro = "Hey there! I'm Robert. Welcome to my portfolio website.";
-  // const overview =
-  //   "I am a Software Engineer at Salesforce, working on Flows and\
-  //         Orchestrations — low-code tools that enable Salesforce customers to automate business processes. I have worked\
-  //         extensively with the core application code in Java and SQL that powers the core backend engine,\
-  //         as well as front-end code in Lightning Web Components. In addition I have also\
-  //         co-founded and served as CTO for BridgeBurma, an organization that provides an\
-  //         online mentorship and social networking platform for Burmese professionals and students worldwide.\
-  //         I am passionate about software engineering because I enjoy solving problems and building meaningful solutions.\
-  //         In my free time, I enjoy playing the piano and guitar, and have recently taken up tennis and swimming to stay\
-  //         fit.";
 
   const projects = [
     {
@@ -154,7 +144,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-4 py-8">
+      <main className="max-w-4xl mx-auto px-0 md:px-4 py-8">
         {/* Navigation */}
         <nav className="flex justify-center space-x-8 mb-12 rounded-lg p-2">
           {["experience", "skills", "philosophy"].map((tab) => (
@@ -173,7 +163,7 @@ export default function Home() {
         </nav>
 
         {/* Content Container - Fixed height with scroll */}
-        <div className="min-h-[600px] rounded-xl p-8">
+        <div className="min-h-[600px] rounded-xl p-0 md:p-8">
           {/* Experience Timeline Section */}
           {selectedTab === "experience" && (
             <div className="relative">
@@ -185,7 +175,7 @@ export default function Home() {
                     className="relative pl-12 transform transition-all duration-300 hover:scale-[1.01]"
                   >
                     <div className="absolute left-4 w-4 h-4 -translate-x-1/2 rounded-full bg-blue-600 ring-4 ring-blue-100" />
-                    <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div className="bg-white rounded-none mr-4 md:rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                         <div>
                           <h3 className="text-xl font-semibold text-gray-900">
@@ -267,7 +257,7 @@ export default function Home() {
               {Object.entries(skills).map(([category, skillList]) => (
                 <div
                   key={category}
-                  className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]"
+                  className="bg-white rounded-lg p-6 mx-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]"
                 >
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {category}
@@ -289,7 +279,7 @@ export default function Home() {
 
           {/* Philosophy Section */}
           {selectedTab === "philosophy" && (
-            <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
+            <div className="bg-white rounded-lg p-8 mx-4 shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-[1.01]">
               <h3 className="text-2xl font-semibold text-gray-900 text-center">
                 {philosophyContent.title}
               </h3>

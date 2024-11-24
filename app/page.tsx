@@ -4,7 +4,7 @@ import { Mail, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { experiences } from "./data";
 
-const TypewriterText = ({ text, speed = 50 }) => {
+const TypewriterText = ({ text = "", speed = 50 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,16 +31,16 @@ const TypewriterText = ({ text, speed = 50 }) => {
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("experience");
   const intro = "Hey there! I'm Robert. Welcome to my portfolio website.";
-  const overview =
-    "I am a Software Engineer at Salesforce, working on Flows and\
-          Orchestrations — low-code tools that enable Salesforce customers to automate business processes. I have worked\
-          extensively with the core application code in Java and SQL that powers the core backend engine,\
-          as well as front-end code in Lightning Web Components. In addition I have also\
-          co-founded and served as CTO for BridgeBurma, an organization that provides an\
-          online mentorship and social networking platform for Burmese professionals and students worldwide.\
-          I am passionate about software engineering because I enjoy solving problems and building meaningful solutions.\
-          In my free time, I enjoy playing the piano and guitar, and have recently taken up tennis and swimming to stay\
-          fit.";
+  // const overview =
+  //   "I am a Software Engineer at Salesforce, working on Flows and\
+  //         Orchestrations — low-code tools that enable Salesforce customers to automate business processes. I have worked\
+  //         extensively with the core application code in Java and SQL that powers the core backend engine,\
+  //         as well as front-end code in Lightning Web Components. In addition I have also\
+  //         co-founded and served as CTO for BridgeBurma, an organization that provides an\
+  //         online mentorship and social networking platform for Burmese professionals and students worldwide.\
+  //         I am passionate about software engineering because I enjoy solving problems and building meaningful solutions.\
+  //         In my free time, I enjoy playing the piano and guitar, and have recently taken up tennis and swimming to stay\
+  //         fit.";
 
   const projects = [
     {

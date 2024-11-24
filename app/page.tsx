@@ -157,7 +157,7 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-4 py-8">
         {/* Navigation */}
         <nav className="flex justify-center space-x-8 mb-12 rounded-lg p-2">
-          {["experience", "projects", "skills", "philosophy"].map((tab) => (
+          {["experience", "skills", "philosophy"].map((tab) => (
             <button
               key={tab}
               onClick={() => setSelectedTab(tab)}

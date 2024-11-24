@@ -66,17 +66,17 @@ export default function Home() {
 
           In the fell clutch of circumstance
           I have not winced nor cried aloud.
-          Under the bludgeonings of change
+          Under the bludgeonings of chance
           My head is bloody, but unbowed.
 
           Beyond this place of wrath and tears
           Looms but the Horror of the shade,
           And yet the menace of the years
-          Finds and shall find me unafraid.
+          Finds and shall find, me unafraid.
 
           It matters not how strait the gate,
           How charged with punishments the scroll,
-          I am the master of my fate,
+          I am the master of my fate
           I am the captain of my soul.`,
   };
 

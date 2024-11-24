@@ -60,10 +60,10 @@ export default function Home() {
   ];
 
   const skills = {
-    Frontend: ["React", "Vue.js", "TypeScript", "Tailwind CSS"],
-    Backend: ["Node.js", "Python", "Java", "PostgreSQL"],
-    DevOps: ["Docker", "Kubernetes", "AWS", "CI/CD"],
-    Tools: ["Git", "VS Code", "Jira", "Figma"],
+    Frontend: ["React", "Next", "Redux", "TypeScript", "Tailwind CSS", "Swift", "HTML"],
+    Backend: ["Node.js", "Python", "C++", "Java", "Spring", "MongoDb", "SQL", "PostgreSQL", "Flask"],
+    DevOps: ["AWS S3", "Redis", "Elasticsearch", "Google Cloud Run", "Docker", "Kubernetes", "CI/CD"],
+    Tools: ["Git", "Splunk", "Grafana", "Argus", "VS Code", "Jira", "Figma"],
   };
 
   const philosophyContent = {
